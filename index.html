@@ -1,110 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Minha Página Pessoal</title>
+    <title>Giovana Junho - Página Pessoal</title>
     <style>
-        * {
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: aliceblue;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to right, #f0f8ff, #e0f0ff);
-            color: #333;
-            line-height: 1.6;
         }
 
         header {
-            background: linear-gradient(90deg, rgb(181, 20, 170), rgb(130, 50, 220));
+            background-color: rgb(181, 20, 170);
             color: white;
-            padding: 40px 20px;
+            padding: 20px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
 
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         main {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
+            padding: 20px;
         }
 
         section {
-            background-color: #fffaf0;
-            padding: 25px;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            border: 1px solid #ddd;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
-            transition: transform 0.2s ease;
-        }
-
-        section:hover {
-            transform: scale(1.02);
+            background-color: antiquewhite;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
         }
 
         h2 {
-            color: #222;
-            margin-bottom: 15px;
-            border-left: 5px solid rgb(181, 20, 170);
-            padding-left: 10px;
+            color: rgb(90, 4, 98);
         }
 
         ul {
             list-style-type: square;
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
         }
 
         footer {
+            background-color: rgb(181, 20, 170);
+            color: white;
             text-align: center;
-            padding: 20px;
-            background-color: #f1f1f1;
-            font-size: 14px;
-            color: #777;
+            padding: 10px;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 12px;
+            background-color: rgb(181, 20, 170);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-voltar:hover {
+            background-color: rgb(140, 10, 130);
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Bem-vindo à minha página pessoal</h1>
-        <p>Estudante de Programação apaixonado por tecnologia 💻🚀</p>
+        <h1>Bem-vindo à minha página pessoal 👋</h1>
+        <p>Sou Giovana, estudante de Desenvolvimento de Sistemas</p>
+        <nav>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#contato">Contato</a>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Minhas Habilidades</h2>
+        <section id="habilidades">
+            <h2>💻 Minhas Habilidades</h2>
             <ul>
                 <li>Lógica de Programação</li>
-                <li>HTML e CSS</li>
+                <li>HTML, CSS e JavaScript</li>
                 <li>Trabalho em Equipe</li>
-                <li>Redes de Computadores e IoT</li>
+                <li>Redes e IoT</li>
+                <li>Python</li>
+                <li>Resolução de Bugs e Problemas Técnicos</li>
             </ul>
         </section>
 
-        <section>
-            <h2>Cursos</h2>
+        <section id="cursos">
+            <h2>📚 Cursos</h2>
             <ul>
                 <li>Curso de Introdução à Programação</li>
                 <li>Curso de HTML e CSS Básico</li>
-                <li>Curso de Arduino e IoT</li>
+                <li>Curso de Arduino (Projetos com LCD, botões e buzzer)</li>
+                <li>Curso de Lógica com Python</li>
+            </ul>
+        </section>
+
+        <section id="sobre">
+            <h2>👩‍💻 Sobre Mim</h2>
+            <p>Meu nome é Giovana Junho, sou estudante no curso Técnico de Desenvolvimento de Sistemas no SENAI. Amo tecnologia, sou curiosa, focada e gosto de desafios. Tenho mais interesse por HTML, CSS, JavaScript e Python.</p>
+        </section>
+
+        <section id="contato">
+            <h2>📞 Contato</h2>
+            <ul>
+                <li>Email: giovanna@email.com</li>
+                <li>WhatsApp: (19) 98602-404</li>
             </ul>
         </section>
     </main>
 
     <footer>
-        &copy; 2025 | Desenvolvido por Giovana Junho
+        <p>&copy; 2025 - Giovana Junho</p>
     </footer>
 
 </body>
